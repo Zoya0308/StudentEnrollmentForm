@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Enrollment Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Student Enrollment Form</h1>
+        <p>Enter student details below</p>
+
+        <form id="studentForm">
+
+            <label for="rollNo">Roll Number</label>
+            <input type="text" id="rollNo" placeholder="Enter Roll Number">
+
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter Full Name" disabled>
+
+            <label for="studentClass">Class</label>
+            <input type="text" id="studentClass" placeholder="Enter Class" disabled>
+
+            <label for="birthDate">Birth Date</label>
+            <input type="date" id="birthDate" disabled>
+
+            <label for="address">Address</label>
+            <textarea id="address" placeholder="Enter Address" disabled></textarea>
+
+            <label for="enrollmentDate">Enrollment Date</label>
+            <input type="date" id="enrollmentDate" disabled>
+
+            <div class="buttons">
+                <button type="button" id="saveBtn" disabled>Save</button>
+                <button type="button" id="updateBtn" disabled>Update</button>
+                <button type="button" id="resetBtn" disabled>Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+  <!-- jQuery Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- JsonPowerDB Commons Library -->
+<script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+
+<!-- Our JavaScript File -->
+<script src="script.js"></script>
+</body>
+</html>
